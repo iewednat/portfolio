@@ -1,13 +1,12 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import RootLayout from './components/layout/RootLayout'
+import HomePage from './pages/HomePage'
 import './styles/globals.css'
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900">
-        {/* Your app content will go here */}
-      </div>
-    </Router>
+    <RootLayout>
+      <HomePage />
+    </RootLayout>
   )
 }
 
